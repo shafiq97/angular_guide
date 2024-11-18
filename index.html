@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up an Angular Project on Windows and Mac</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .note {
+            background-color: #fffae6;
+            border-left: 6px solid #ffeb3b;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .important {
+            background-color: #ffe6e6;
+            border-left: 6px solid #f44336;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>Angular is a powerful framework for building client-side applications using HTML, CSS, and TypeScript. This guide will walk you through the steps to set up an Angular project on both Windows and Mac operating systems.</p>
+        </section>
+
+        <section class="section" id="prerequisites">
+            <h2>Prerequisites</h2>
+            <p>Before setting up Angular, ensure that you have the following installed on your system:</p>
+            <ul>
+                <li><strong>Node.js and npm:</strong> Angular requires Node.js and its package manager, npm.</li>
+                <li><strong>Angular CLI:</strong> Command Line Interface tool to initialize, develop, scaffold, and maintain Angular applications.</li>
+                <li><strong>Code Editor:</strong> Such as <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="windows-setup">
+            <h2>Setting Up Angular on Windows</h2>
+
+            <h3>1. Install Node.js and npm</h3>
+            <ol>
+                <li>Go to the <a href="https://nodejs.org/en/download/" target="_blank">Node.js official website</a>.</li>
+                <li>Download the <strong>LTS</strong> (Long Term Support) version for Windows.</li>
+                <li>Run the installer and follow the prompts. Ensure that the option to install <code>npm</code> is checked.</li>
+                <li>To verify the installation, open <strong>Command Prompt</strong> and run:
+                    <pre><code>node -v
+npm -v</code></pre>
+                </li>
+            </ol>
+
+            <h3>2. Install Angular CLI</h3>
+            <ol>
+                <li>Open <strong>Command Prompt</strong> as an administrator.</li>
+                <li>Run the following command to install Angular CLI globally:
+                    <pre><code>npm install -g @angular/cli</code></pre>
+                </li>
+                <li>Verify the installation by checking the Angular CLI version:
+                    <pre><code>ng version</code></pre>
+                </li>
+            </ol>
+
+            <h3>3. Create a New Angular Project</h3>
+            <ol>
+                <li>Navigate to the directory where you want to create your project:
+                    <pre><code>cd path\to\your\desired\directory</code></pre>
+                </li>
+                <li>Create a new Angular project:
+                    <pre><code>ng new my-angular-app</code></pre>
+                </li>
+                <li>Navigate into the project directory:
+                    <pre><code>cd my-angular-app</code></pre>
+                </li>
+            </ol>
+
+            <h3>4. Serve the Application</h3>
+            <ol>
+                <li>Start the development server:
+                    <pre><code>ng serve</code></pre>
+                </li>
+                <li>Open your browser and navigate to <a href="http://localhost:4200" target="_blank">http://localhost:4200</a> to see your running application.</li>
+            </ol>
+
+            <div class="note">
+                <strong>Note:</strong> If you encounter permission issues during installation, try running the Command Prompt as an administrator.
+            </div>
+        </section>
+
+        <section class="section" id="mac-setup">
+            <h2>Setting Up Angular on Mac</h2>
+
+            <h3>1. Install Homebrew (Optional but Recommended)</h3>
+            <p>Homebrew is a popular package manager for macOS. It simplifies the installation of software.</p>
+            <ol>
+                <li>Open the <strong>Terminal</strong>.</li>
+                <li>Install Homebrew by running:
+                    <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+                </li>
+                <li>After installation, ensure Homebrew is up to date:
+                    <pre><code>brew update</code></pre>
+                </li>
+            </ol>
+
+            <h3>2. Install Node.js and npm</h3>
+            <p>You can install Node.js either via Homebrew or by downloading the installer.</p>
+            <ol>
+                <li><strong>Using Homebrew:</strong>
+                    <pre><code>brew install node</code></pre>
+                </li>
+                <li><strong>Using Installer:</strong>
+                    <ul>
+                        <li>Go to the <a href="https://nodejs.org/en/download/" target="_blank">Node.js official website</a>.</li>
+                        <li>Download the <strong>LTS</strong> version for macOS.</li>
+                        <li>Run the installer and follow the prompts.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Verify the installation by running:</p>
+            <pre><code>node -v
+npm -v</code></pre>
+
+            <h3>3. Install Angular CLI</h3>
+            <ol>
+                <li>In the Terminal, run the following command to install Angular CLI globally:
+                    <pre><code>npm install -g @angular/cli</code></pre>
+                </li>
+                <li>Verify the installation by checking the Angular CLI version:
+                    <pre><code>ng version</code></pre>
+                </li>
+            </ol>
+
+            <h3>4. Create a New Angular Project</h3>
+            <ol>
+                <li>Navigate to the directory where you want to create your project:
+                    <pre><code>cd /path/to/your/desired/directory</code></pre>
+                </li>
+                <li>Create a new Angular project:
+                    <pre><code>ng new my-angular-app</code></pre>
+                </li>
+                <li>Navigate into the project directory:
+                    <pre><code>cd my-angular-app</code></pre>
+                </li>
+            </ol>
+
+            <h3>5. Serve the Application</h3>
+            <ol>
+                <li>Start the development server:
+                    <pre><code>ng serve</code></pre>
+                </li>
+                <li>Open your browser and navigate to <a href="http://localhost:4200" target="_blank">http://localhost:4200</a> to see your running application.</li>
+            </ol>
+
+            <div class="note">
+                <strong>Note:</strong> If you encounter permission issues during installation, you might need to use <code>sudo</code>. However, it's generally recommended to configure npm to install packages without requiring sudo.
+            </div>
+        </section>
+
+        <section class="section" id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <p>Here are some common issues you might encounter during the setup and how to resolve them:</p>
+
+            <h3>1. Permission Errors</h3>
+            <div class="important">
+                <strong>Solution:</strong> Avoid using <code>sudo</code> with npm. Instead, configure npm to install global packages without requiring elevated privileges.
+                <ol>
+                    <li>Create a directory for global installations:
+                        <pre><code>mkdir ~/.npm-global</code></pre>
+                    </li>
+                    <li>Configure npm to use the new directory path:
+                        <pre><code>npm config set prefix '~/.npm-global'</code></pre>
+                    </li>
+                    <li>Add the new directory to your PATH in <code>.bashrc</code>, <code>.bash_profile</code>, or <code>.zshrc</code>:
+                        <pre><code>export PATH=~/.npm-global/bin:$PATH</code></pre>
+                    </li>
+                    <li>Apply the changes:
+                        <pre><code>source ~/.bashrc</code></pre>
+                        <em>or</em>
+                        <pre><code>source ~/.zshrc</code></pre>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>2. Angular CLI Not Recognized</h3>
+            <p>
+                If you receive a message like <code>'ng' is not recognized</code>, it means that Angular CLI is not installed globally or not added to your PATH.
+            </p>
+            <div class="important">
+                <strong>Solution:</strong>
+                <ol>
+                    <li>Ensure Angular CLI is installed globally:
+                        <pre><code>npm install -g @angular/cli</code></pre>
+                    </li>
+                    <li>Verify the installation:
+                        <pre><code>ng version</code></pre>
+                    </li>
+                    <li>If the issue persists, check your PATH environment variable to ensure npm's global bin directory is included.</li>
+                </ol>
+            </div>
+
+            <h3>3. Port 4200 Already in Use</h3>
+            <p>
+                If you try to run <code>ng serve</code> and receive an error that port 4200 is already in use, another application is occupying the port.
+            </p>
+            <div class="important">
+                <strong>Solution:</strong>
+                <ol>
+                    <li>Find the process using port 4200:
+                        <ul>
+                            <li><strong>Windows:</strong>
+                                <pre><code>netstat -aon | findstr :4200</code></pre>
+                                Note the PID (Process ID) and terminate it using:
+                                <pre><code>taskkill /PID <PID> /F</code></pre>
+                            </li>
+                            <li><strong>Mac:</strong>
+                                <pre><code>lsof -i :4200</code></pre>
+                                Note the PID and terminate it using:
+                                <pre><code>kill -9 <PID></code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Alternatively, serve the application on a different port:
+                        <pre><code>ng serve --port 4300</code></pre>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Congratulations! You have successfully set up an Angular project on your Windows or Mac machine. You can now start building dynamic and responsive web applications using Angular. For more advanced topics and best practices, refer to the <a href="https://angular.io/docs" target="_blank">official Angular documentation</a>.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
