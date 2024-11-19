@@ -60,6 +60,16 @@
         ul, ol {
             margin-left: 20px;
         }
+
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        display: block; 
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+
     </style>
 </head>
 <body>
@@ -81,17 +91,51 @@
             </ul>
         </section>
 
-        <section class="section" id="windows-setup">
-            <h2>Setting Up Angular on Windows</h2>
+        <section class="section" id="prerequisites">
+            <h2>Installing <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></h2>
+            <p>Download and install Visual Studio Code as follows:</p>
+            <ul>
+                <li><strong><img class="responsive-img" src="images/vs1.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/vs2.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/vs3.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/vs4.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/vs5.jpeg" alt=""></li>
+            </ul>
+        </section>
 
-            <h3>1. Install Node.js and npm</h3>
+        <section class="section" id="prerequisites">
+            <h2>Installing <a href="https://nodejs.org/en/" target="_blank">Node JS</a></h2>
+            <p>Download and install Node JS:</p>
+            <ul>
+                <li><strong><img class="responsive-img" src="images/node1.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/node2.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/node3.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/node4.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/node5.jpeg" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="section" id="prerequisites">
+            <h2>Installing Angular CLI</h2>
+            <p>Open Command Prompt</p>
+            <ul>
+                <li><strong><img class="responsive-img" src="images/ang1.jpeg" alt=""></li>
+                    <p>Write below command to install angular cli</p>
+
+                <li><strong><img class="responsive-img" src="images/ang2.jpeg" alt=""></li>
+                <li><strong><img class="responsive-img" src="images/ang3.jpeg" alt=""></li>
+                    <p>Verify angular by writing "ng version"</p>
+
+                <li><strong><img class="responsive-img" src="images/ang4.jpeg" alt=""></li>
+            </ul>
+        </section>
+
+        <!-- <section class="section" id="windows-setup">
+            <h2>Verify Up Angular on Windows</h2>
+
             <ol>
-                <li>Go to the <a href="https://nodejs.org/en/download/" target="_blank">Node.js official website</a>.</li>
-                <li>Download the <strong>LTS</strong> (Long Term Support) version for Windows.</li>
-                <li>Run the installer and follow the prompts. Ensure that the option to install <code>npm</code> is checked.</li>
                 <li>To verify the installation, open <strong>Command Prompt</strong> and run:
-                    <pre><code>node -v
-npm -v</code></pre>
+                    <pre><code>node -vnpm -v</code></pre>
                 </li>
             </ol>
 
@@ -130,7 +174,7 @@ npm -v</code></pre>
             <div class="note">
                 <strong>Note:</strong> If you encounter permission issues during installation, try running the Command Prompt as an administrator.
             </div>
-        </section>
+        </section> -->
 
         <section class="section" id="mac-setup">
             <h2>Setting Up Angular on Mac</h2>
@@ -162,8 +206,7 @@ npm -v</code></pre>
                 </li>
             </ol>
             <p>Verify the installation by running:</p>
-            <pre><code>node -v
-npm -v</code></pre>
+            <pre><code>node -vnpm -v</code></pre>
 
             <h3>3. Install Angular CLI</h3>
             <ol>
@@ -173,27 +216,6 @@ npm -v</code></pre>
                 <li>Verify the installation by checking the Angular CLI version:
                     <pre><code>ng version</code></pre>
                 </li>
-            </ol>
-
-            <h3>4. Create a New Angular Project</h3>
-            <ol>
-                <li>Navigate to the directory where you want to create your project:
-                    <pre><code>cd /path/to/your/desired/directory</code></pre>
-                </li>
-                <li>Create a new Angular project:
-                    <pre><code>ng new my-angular-app</code></pre>
-                </li>
-                <li>Navigate into the project directory:
-                    <pre><code>cd my-angular-app</code></pre>
-                </li>
-            </ol>
-
-            <h3>5. Serve the Application</h3>
-            <ol>
-                <li>Start the development server:
-                    <pre><code>ng serve</code></pre>
-                </li>
-                <li>Open your browser and navigate to <a href="http://localhost:4200" target="_blank">http://localhost:4200</a> to see your running application.</li>
             </ol>
 
             <div class="note">
